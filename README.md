@@ -19,7 +19,7 @@ Audio Source
 
 TextMesh Pro
 
-VFX (взрыв врага при убийстве)
+VFX-анимация (взрыв врага при убийстве)
 
 ## Toolkit:
 
