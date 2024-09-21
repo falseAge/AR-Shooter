@@ -1,4 +1,4 @@
-# Название
+# AR Shooter
 *Простой AR-шутер под Android.*
 
 ## Features:
