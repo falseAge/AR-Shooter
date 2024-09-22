@@ -1,19 +1,3 @@
-## Instruments:
-
-AR
-
-Audio Source
-
-TextMesh Pro
-
-VFX-анимация (взрыв врага при убийстве)
-
-## Toolkit:
-
-C#, Unity
-
--------------------------------------------------------------------------------
-
 # AR Shooter
 
 ## Описание
@@ -34,11 +18,12 @@ C#, Unity
 
 ![Screenshot](https://github.com/falseAge/AR-Shooter/blob/main/1f.png)
 
-![GIF](https://github.com/falseAge/AR-Shooter/blob/main/2f.gif)
+![GIF](https://github.com/falseAge/AR-Shooter/blob/main/f2.gif)
 
 ## Технологии
 
 Unity 3D 2022.3.17f1
+
 C# v.8
 
 ## Инструменты
