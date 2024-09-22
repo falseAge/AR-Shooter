@@ -16,7 +16,7 @@
 
 ## Скриншоты
 
-<div align="center">
+<div position="relative" align="center">
   <img width=420px src="https://github.com/falseAge/AR-Shooter/blob/main/1f.png">
     
   <img width=420px src="https://github.com/falseAge/AR-Shooter/blob/main/f2.gif">
