@@ -1,15 +1,25 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    [SerializeField] private float _speed;
+    [SerializeField] private float _speed = 20f;
+
+    private System.Action<Bullet> _onDestroyCallback;
+    private Vector3 _direction;
+
+    public void SetDirection(Vector3 direction)
+    {
+        _direction = direction.normalized;
+    }
 
     private void Update()
     {
-        
-        transform.Translate(Vector3.forward * _speed * Time.deltaTime);
+        transform.position += _direction * _speed * Time.deltaTime;
+    }
+
+    public void SetActionOnDestroy(System.Action<Bullet> callback)
+    {
+        _onDestroyCallback = callback;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -17,7 +27,12 @@ public class Bullet : MonoBehaviour
         if (other.TryGetComponent(out Enemy enemy))
         {
             enemy.Die();
-            Destroy(gameObject);
+            _onDestroyCallback?.Invoke(this);
         }
+    }
+
+    private void OnBecameInvisible()
+    {
+        _onDestroyCallback?.Invoke(this);
     }
 }
